@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Author  : We Sort | Ben Edmonds | wesort.co.uk -->
+<meta charset="utf-8"/>
+<title>404 - Ben Edmonds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="NOINDEX, NOFOLLOW">
+<link rel="icon" type="image/png" sizes="200x200" href="/favicon.ico" />
+
+<meta http-equiv="refresh" content="3;url=/" />
+
+<!-- Reset by Andy Bell
+- https://dev.to/hankchizljaw/a-modern-css-reset-6p3 -->
+<style type="text/css">/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+body {
+  font-family: 'Work Sans', Verdana, sans-serif;
+  background-color: #3e84bc;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  max-width: 26em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16vh;
+}
+body * + * {
+  margin-top: 2rem;
+}
+h1, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: #fccece;
+  text-decoration: none;
+  border: 2px solid #c28b8b;
+  border-left: none;
+  border-right: none;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+}
+a:hover {
+  color: #c28b8b;
+  background-color: white;
+}
+.float-right {
+  float: right;
+  margin-bottom: 2rem;
+}
+
+@media all and (min-width: 35em) {
+body {
+  font-size: 2.5rem;
+}
+}
+</style>
+
+<!-- loading spinner -->
+<style>
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 0.35rem;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <h1>404 Error</h1>
+  
+  <p>This page simply does not exist. Hold on a sec&hellip;</p>
+  
+  <div class="loader"></div>
+
+<script>
+// Make all external links open in new window
+// This differs from blog.wesort.co.uk due to subdomain
+window.onload = function () {
+  for(var tagArray = document.getElementsByTagName("a"), index = 0;index < tagArray.length;index++) {
+    var b = tagArray[index];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") && (b.rel = "noopener")
+  }
+};
+</script>
+</body>
+</html>

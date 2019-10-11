@@ -1,0 +1,6 @@
+# Redirect for Netlify
+# More info: https://www.netlify.com/docs/redirects/
+
+# Examples
+/old-page /new-page 301
+/news/* /blog/:splat 301

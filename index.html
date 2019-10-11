@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Author  : We Sort | Ben Edmonds | wesort.co.uk
+  https://github.com/wesort/simple-website -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="INDEX, FOLLOW">
+<link rel="icon" type="image/png" href="/favicon.png" />
+<!-- Icons supplied or created using something like favicon.io -->
+<!-- Insert new icon tags here -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* by Andy Bell - https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  /*margin-top: 1em;*/
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Further defaults by We Sort. */
+u {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+</style>
+
+<!-- Brand Styles -->
+<style type="text/css">
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+body {
+  font-family: 'Work Sans', Verdana, sans-serif; /* Font */
+  background-color: #c6d3dc; /* Site background */
+  color: #283f52; /* Text colour */
+  font-size: 1.35rem; /* Text size */
+  padding: 1rem;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+body * + * {
+  margin-top: 2rem; /* Adds consistent verical space between elements */
+                    /* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
+}
+.no-margin-top-within * {
+  margin-bottom: 0;
+}
+.mb-double {
+  margin-top: 2rem;
+}
+h1, h2, h3, h4, h5, p {
+  font-size: inherit; /* Uniform font size */
+  font-weight: inherit; /* Uniform font weight */
+}
+a {
+  color: #11578e; /* hyperlink colour */
+  text-decoration: none;
+  border-bottom: 2px solid; /* could set different line weight */
+}
+a:hover {
+  color: #a72a03; /* Different text colour on hover */
+}
+
+/* Responsive float based grid system */
+.grid-wrap {
+  margin-left: -2rem; /* -- Sets the baseline gutter -- */
+  overflow: hidden;
+  clear: both;
+}
+.grid-col {
+  padding-left: 2rem; /* -- Sets the baseline gutter -- */
+  float: left;
+  width: 100%;
+}
+
+/* BP2:Breakpoint 2 */
+@media all and (min-width: 35em) {
+  body {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .bp2-col-1-2 {
+    width: 50%;
+  }
+}
+</style>
+
+<!-- Search & social optimisation: create using something like megatags.co -->
+<title>Simple Site</title>
+<meta name="description" content="The basic modern website. No build process. Minimal config. Host on Netlify, GitHub Pages or (probably) any server.">
+<!-- Insert new tags here -->
+
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Simple site</h1>
+    </header>
+    
+    <main>
+    <p>You'll likely want to explain what you do, how you do it, and why you're the best at doing it. This might include <a href="">links</a> to lead visitors to more information.</p>
+    
+    <p>This is a second paragraph that fills in the page a bit&nbsp;more.</p>
+
+    <div class="grid-wrap no-margin-top-within"> <!-- grid system wrapper -->
+      <img class="grid-col bp2-col-1-2 mb-double" src="/assets/placeholder-01.svg"><!-- grid item -->
+      <img class="grid-col bp2-col-1-2 " src="/assets/bbc-testcard-01.jpg"><!-- grid item -->
+    </div>
+    </main>
+    
+    <p><a href="mailto:simple@wesort.co.uk">simple@wesort.co.uk</a></p><!-- an email link -->
+  </div>
+
+<script>
+// Make all external links open in new window
+window.onload = function () {
+  for(var tagArray = document.getElementsByTagName("a"), index = 0;index < tagArray.length;index++) {
+    var b = tagArray[index];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") && (b.rel = "noopener")
+  }
+};
+</script>
+
+<!-- Google Analytics goes here -->
+
+
+</body>
+</html>

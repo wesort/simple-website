@@ -1,0 +1,7 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /
+
+User-agent: Twitterbot
+Disallow:
