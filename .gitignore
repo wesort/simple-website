@@ -1,0 +1,16 @@
+# Things for git to not bother with #
+#
+# # #
+# To avoid dev code being indexed #
+robots.txt
+#
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
