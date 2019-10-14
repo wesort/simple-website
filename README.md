@@ -32,10 +32,6 @@ The basic modern website. No build process. Minimal config. Host on Netlify, Git
   - [ ] Create an image for social media rich cards (1280 × 640px is a good size)
 - [ ] Google Analytics: setup account and tracking code, insert into bottom of `index.html`
 - [ ] If you are including video embed, [fitvidsjs](http://fitvidsjs.com/) will be very useful and will need to be installed
- 
-## Deploy on own server
-- [ ] Place the files on the server and connect your domain
-- [ ] Remove `.html` file extension with [this gist for Nginx](https://gist.github.com/wesort/a10c1d6edf62bc693fb7015cdd0dde2a) or [this gist for Apache]()
 
 ## Deploy to Netlify
 - [ ] Start a [Netlify.com](https://app.netlify.com/) account (free)
@@ -50,3 +46,8 @@ The basic modern website. No build process. Minimal config. Host on Netlify, Git
 - [ ] More info: [pages.github.com](https://pages.github.com/)
 - [ ] Configure the custom domain ([help doc](https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain))
 
+ 
+## Deploy on own server
+- [ ] Place the files on the server and connect your domain
+- [ ] Remove `.html` file extension with [this gist for Nginx](https://gist.github.com/wesort/a10c1d6edf62bc693fb7015cdd0dde2a) or [this gist for Apache](https://gist.github.com/wesort/645e3f54ca35ac6abcdd100c0f24d2ad)
+-
