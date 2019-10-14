@@ -1,16 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 1500 1500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style>.cls-1{fill:#eaf0f3;}.cls-2{fill:none;stroke:#bdbdbd;stroke-miterlimit:10;stroke-width:10px;}.cls-3{fill:#bdbdbd;}</style>
+    <style>
+      .background {
+        fill: #333;
+        }
+      .foreground {
+        fill: #DDD;
+      }
+      
+      .box {
+        fill:none;
+        stroke: #DDD;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+    </style>
   </defs>
   <g id="Layer_1" data-name="Layer 1">
-    <rect class="cls-1" width="1500" height="1500" style="fill: rgb(214, 214, 214);"/>
+    <rect class="background" width="1500" height="1500"/>
   </g>
   <g id="Layer_2" data-name="Layer 2">
-    <rect class="cls-2" x="554.4" y="608.19" width="391.2" height="283.62" style="fill-rule: evenodd; stroke: rgb(73, 73, 73);"/>
-    <polygon class="cls-3" points="587.31 858.52 665.37 750 713.56 817 743.42 858.52 587.31 858.52" style="fill: rgb(73, 73, 73);"/>
-    <polygon class="cls-3" points="796.65 701.48 909.6 858.52 757.32 858.52 752.58 851.93 720.5 807.34 796.65 701.48" style="fill: rgb(73, 73, 73);"/>
-    <path class="cls-3" d="M641.29,645.05a30.85,30.85,0,1,1-30.84,30.84,30.85,30.85,0,0,1,30.84-30.84Z" style="fill: rgb(73, 73, 73);"/>
-    <path class="cls-3" d="M641.29,645.05"/>
+    <rect class="foreground box" x="554.4" y="608.19" width="391.2" height="283.62" style="fill-rule: evenodd;"/>
+    <polygon class="foreground" points="587.31 858.52 665.37 750 713.56 817 743.42 858.52 587.31 858.52"/>
+    <polygon class="foreground" points="796.65 701.48 909.6 858.52 757.32 858.52 752.58 851.93 720.5 807.34 796.65 701.48"/>
+    <path class="foreground" d="M641.29,645.05a30.85,30.85,0,1,1-30.84,30.84,30.85,30.85,0,0,1,30.84-30.84Z"/>
+    <path class="foreground" d="M641.29,645.05"/>
   </g>
 </svg>

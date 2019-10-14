@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Author  : We Sort | Ben Edmonds | wesort.co.uk -->
+<!-- Author  : We Sort | Ben Edmonds | wesort.co.uk
+  https://github.com/wesort/simple-website -->
+  
 <meta charset="utf-8"/>
-<title>404 - Ben Edmonds</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 - Page not found</title>
 <meta name="robots" content="NOINDEX, NOFOLLOW">
-<link rel="icon" type="image/png" sizes="200x200" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="200x200" href="/favicon.png" />
 
-<meta http-equiv="refresh" content="3;url=/" />
+<meta http-equiv="refresh" content="2;url=/" />
 
-<!-- Reset by Andy Bell
-- https://dev.to/hankchizljaw/a-modern-css-reset-6p3 -->
-<style type="text/css">/* Box sizing rules */
+<!-- CSS Reset -->
+<style type="text/css">
+/* by Andy Bell - https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -70,7 +74,7 @@ img {
 
 /* Natural flow and rhythm in articles by default */
 article > * + * {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -90,51 +94,93 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Further defaults by We Sort. */
+u {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+.ie-only {
+  font-size: 1rem;
+  color: red;
+  background: white;
+}
 </style>
 
+<!-- Brand Styles -->
 <style type="text/css">
+/* Font */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 body {
-  font-family: 'Work Sans', Verdana, sans-serif;
-  background-color: #3e84bc;
-  color: white;
-  font-size: 1.5rem;
+  font-family: 'Work Sans', Verdana, sans-serif; /* Font */
+  background-color: #c6d3dc; /* Site background */
+  color: #283f52; /* Text colour */
+  font-size: 1.35rem; /* Text size */
   padding: 1rem;
-  max-width: 26em;
+  max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 16vh;
 }
 body * + * {
+  margin-top: 2rem; /* Adds consistent verical space between elements */
+                    /* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
+}
+.no-margin-top-within * {
+  margin-bottom: 0;
+}
+.mb-double {
   margin-top: 2rem;
 }
-h1, p {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2, h3, h4, h5, p {
+  font-size: inherit; /* Uniform font size */
+  font-weight: inherit; /* Uniform font weight */
 }
 a {
-  color: #fccece;
+  color: #11578e; /* hyperlink colour */
   text-decoration: none;
-  border: 2px solid #c28b8b;
-  border-left: none;
-  border-right: none;
-  padding-top: 0.05em;
-  padding-bottom: 0.05em;
+  border-bottom: 2px solid; /* could set different line weight */
 }
 a:hover {
-  color: #c28b8b;
-  background-color: white;
+  color: #a72a03; /* Different text colour on hover */
 }
-.float-right {
-  float: right;
-  margin-bottom: 2rem;
+.social-icons .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 1rem;
+}
+.social-icons .icon:last-child {
+  margin-right: 0;
+}
+/* fill colour set in each .svg file
+   OR, the svgs could be inlined and :hover styles can be added
+.social-icon svg {
+  fill: #11578e;
+}
+*/
+
+/* Responsive grid system with floats */
+.grid-wrap {
+  margin-left: -2rem; /* -- Sets the baseline gutter -- */
+  overflow: hidden;
+  clear: both;
+}
+.grid-col {
+  padding-left: 2rem; /* -- Sets the baseline gutter -- */
+  float: left;
+  width: 100%;
 }
 
+/* BP2:Breakpoint 2 */
 @media all and (min-width: 35em) {
-body {
-  font-size: 2.5rem;
-}
+  body {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .bp2-col-1-2 {
+    width: 50%;
+  }
 }
 </style>
 
@@ -143,14 +189,14 @@ body {
 .loader,
 .loader:before,
 .loader:after {
-  background: #ffffff;
+  background: #283f52; /* loader colour */
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
 .loader {
-  color: #ffffff;
+  color: #283f52; /* loader colour */
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;
