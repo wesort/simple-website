@@ -218,9 +218,18 @@ a:hover {
     <p>This is another paragraph that fills in the page a bit&nbsp;more.</p>
 
     <div class="grid-wrap no-margin-top-within"> <!-- grid system wrapper -->
-      <img class="grid-col bp2-col-1-2 mb-double" src="/assets/placeholder-01.svg"><!-- grid item with an image -->
+      <img class="grid-col bp2-col-1-2 mb-double" src="/assets/placeholder-01.svg" alt="placeholder icon"><!-- grid item with an image -->
       <figure class="grid-col bp2-col-1-2"><!-- grid item with an image inside -->
-        <img src="/assets/bbc-testcard-01.jpg">
+        <img alt="BBC test card F"
+          src="/assets/bbc-testcard-01_w1200.jpg"
+          srcset="
+            /assets/bbc-testcard-01_w380.jpg 380w,
+            /assets/bbc-testcard-01_w800.jpg 800w,
+            /assets/bbc-testcard-01_w1200.jpg 1200w"
+          sizes="
+            (min-width: 52em) 368px,
+            (min-width: 35em) 50vw,
+            100vw">
         <figcaption class="type-small">Test Card F</figcaption>
       </figure>
     </div>
@@ -232,8 +241,16 @@ a:hover {
     <p><a href="tel:+44">+44 1234 567 890</a></p><!-- a telephone link -->
     
     <ul class="social-icons">
-      <li class="icon"><a href="https://github.com/wesort"><img src="/assets/icons/github.svg"></a></li>
-      <li class="icon"><a href="https://twitter.com/we_sort"><img src="/assets/icons/twitter.svg"></a></li>
+      <li class="icon">
+        <a href="https://github.com/wesort">
+          <img src="/assets/icons/github.svg" alt="logo for GitHub">
+        </a>
+      </li>
+      <li class="icon">
+        <a href="https://twitter.com/we_sort">
+          <img src="/assets/icons/twitter.svg" alt="logo for Twitter">
+        </a>
+      </li>
     </ul>
   </footer>
     

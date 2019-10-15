@@ -2,12 +2,12 @@
 The basic modern website. No build process. Minimal config. Host on Netlify, GitHub Pages or (probably) any server.
 
 ## Demo and examples
-[simple.wesort.co.uk](http://simple.wesort.co.uk), [wesort.co.uk/simple](https://wesort.co.uk/simple)
+[simple.wesort.co.uk](http://simple.wesort.co.uk) &ndash; [wesort.co.uk/simple](https://wesort.co.uk/simple)
 
 ## Features
 - [x] Static site with no dependencies or build process
 - [x] Lightweight, fast, responsive
-- [x] Apply any styles. Choices of typeface and colour go a long way to expressing a brand indentity.
+- [x] Apply any styles. Choices of typeface and colour go a long way to expressing a brand identity
 - [x] Shallow learning curve
 - [x] Widest possible options for hosting
 - [x] Search and social optimisable
