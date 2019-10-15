@@ -1,21 +1,18 @@
 # Simple website
 The basic modern website. No build process. Minimal config. Host on Netlify, GitHub Pages or (probably) any server.
 
-## Demo
-[simple.wesort.co.uk](http://simple.wesort.co.uk)
-
-## Examples of similar sites
-[wesort.co.uk/simple](https://wesort.co.uk/simple)
+## Demo and examples
+[simple.wesort.co.uk](http://simple.wesort.co.uk), [wesort.co.uk/simple](https://wesort.co.uk/simple)
 
 ## Features
-- Static site with no dependencies or build process
-- Lightweight, fast, responsive
-- Apply any styles. Choices of typeface and colour go a long way to expressing a brand indentity.
-- Shallow learning curve
-- Widest possible options for hosting
-- Search and social optimisable
-- Custom 404 error page with meta-refresh to homepage after 3 seconds
-- All external links open in new tab / window (uses vanilla javascript)
+- [x] Static site with no dependencies or build process
+- [x] Lightweight, fast, responsive
+- [x] Apply any styles. Choices of typeface and colour go a long way to expressing a brand indentity.
+- [x] Shallow learning curve
+- [x] Widest possible options for hosting
+- [x] Search and social optimisable
+- [x] Custom 404 error page with meta-refresh to homepage after 3 seconds
+- [x] All external links open in new tab / window (uses vanilla javascript)
 
 ## Setup
 - [ ] Clone or download this repo
@@ -53,4 +50,4 @@ The basic modern website. No build process. Minimal config. Host on Netlify, Git
 ## Deploy on own server
 - [ ] Place the files on the server and connect your domain
 - [ ] Remove `.html` file extension with [this gist for Nginx](https://gist.github.com/wesort/a10c1d6edf62bc693fb7015cdd0dde2a) or [this gist for Apache](https://gist.github.com/wesort/645e3f54ca35ac6abcdd100c0f24d2ad)
--
+
