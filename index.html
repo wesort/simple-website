@@ -131,10 +131,10 @@ body * + * {
                     /* https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/ */
 }
 .no-margin-top-within * {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 .mb-double {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 h1, h2, h3, h4, h5, p {
   font-size: inherit; /* Uniform font size */
@@ -148,6 +148,9 @@ a {
 a:hover {
   color: #a72a03; /* Different text colour on hover */
 }
+.type-small {
+  font-size: 0.8em;
+}
 .social-icons .icon {
   display: inline-block;
   width: 1em;
@@ -159,9 +162,9 @@ a:hover {
 }
 /* fill colour set in each .svg file
    OR, the svgs could be inlined and :hover styles can be added
-.social-icon svg {
-  fill: #11578e;
-}
+  .social-icon svg {
+    fill: #11578e;
+  }
 */
 
 /* Responsive grid system with floats */
@@ -182,6 +185,9 @@ a:hover {
     font-size: 2rem;
     padding: 2rem;
   }
+  .type-small {
+  font-size: 0.6em;
+}
   .bp2-col-1-2 {
     width: 50%;
   }
@@ -213,7 +219,10 @@ a:hover {
 
     <div class="grid-wrap no-margin-top-within"> <!-- grid system wrapper -->
       <img class="grid-col bp2-col-1-2 mb-double" src="/assets/placeholder-01.svg"><!-- grid item with an image -->
-      <img class="grid-col bp2-col-1-2 " src="/assets/bbc-testcard-01.jpg"><!-- grid item with an image -->
+      <figure class="grid-col bp2-col-1-2"><!-- grid item with an image inside -->
+        <img src="/assets/bbc-testcard-01.jpg">
+        <figcaption class="type-small">Test Card F</figcaption>
+      </figure>
     </div>
   </main>
   

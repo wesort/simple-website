@@ -4,6 +4,9 @@ The basic modern website. No build process. Minimal config. Host on Netlify, Git
 ## Demo
 [simple.wesort.co.uk](http://simple.wesort.co.uk)
 
+## Examples of similar sites
+- [wesort.co.uk/simple](https://wesort.co.uk/simple)
+
 ## Features
 - Static site with no dependencies or build process
 - Lightweight, fast, responsive
