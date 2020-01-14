@@ -38,7 +38,7 @@ The basic modern website. No build process. Minimal config. Host on Netlify, Git
 - [ ] Create a new site by connecting to GitHub: [app.netlify.com/start](https://app.netlify.com/start)
 - [ ] Configure the domain:
     - [ ] Set the subdomain to something suitable for the project
-    - [ ] Configure your custom domain ([help doc](https://www.netlify.com/docs/custom-domains))
+    - [ ] Configure your custom domain ([help doc](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/#configure-an-apex-domain)) NB. You may need to wait 5 minutes from setting the custom domain in Netlify until the SSL certificate is ready to be provisioned.
 - [ ] Robots: Netlify will rename `live.robots.txt` to `robots.txt` automatically with a build command in `netlify.toml`
 - [ ] Redirect: `_redircts` file allows for legacy or vanity URLs to be redirected appropriately
 
